@@ -14,4 +14,5 @@ ADD https://archive.apache.org/dist/kafka/0.8.1/kafka_2.8.0-0.8.1.tgz /
 RUN cd / && tar xzf kafka_2.8.0-0.8.1.tgz
 ENV TAIL_KAFKA_HOME /kafka_2.8.0-0.8.1
 
+
 CMD ["supervisord", "-n"]
